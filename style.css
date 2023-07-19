@@ -1,0 +1,634 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: sans-serif;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+
+
+:root{
+    --azul: #00425A;
+    --naranja: #FC7300;
+    --blanco: #EFF5F5;
+    --negro: #181823;
+    --verde: #1F8A70;
+
+    --font-primaria: 'Belanosima', sans-serif;
+    --font-secundaria: 'Poppins', sans-serif;
+}
+
+@media (max-width:425px) {
+    
+    /* HEADER */
+    
+    .header{
+        width: 100%;
+        height: 80px;
+        background-color: var(--naranja);
+        
+    }
+
+    #btn-menu{
+        display: none;
+    }
+    
+    .nav label{
+        /* border: 1px solid beige; */
+        display: block;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        font-size: 1.6rem;
+        margin: 20px 15px;
+        
+    }
+
+    .nav label:hover{
+        cursor: pointer;
+    }
+
+    .menu{
+        position: absolute;
+        background: var(--naranja);
+        width: 70%;
+        margin-left: -70%;
+        transition: all .5s;
+    }
+
+    .menu ul{
+        flex-direction: column;
+        
+    }
+
+    .menu li{
+        border-top: 1px solid var(--blanco);
+        padding: 5px;
+    }
+    
+    #btn-menu:checked ~ .menu {
+        margin: 0;
+    }
+
+    .menu > ul > li > a{
+        text-decoration: none;
+        font-family: var(--font-secundaria);
+        color: var(--blanco);
+        
+    }
+ 
+    /* SECTION-TITLE-IMG */
+
+    .title-img{
+        width: 100%;
+        height: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url(./multimedia/img/libro-celular.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 10px;
+        font-size: 1rem;
+    }
+
+    .title-untref{
+        font-size: 2.8rem;
+        color: var(--azul);
+        text-shadow: 0px 0px 5px var(--naranja);
+    }
+
+    /* SECTIONS-1Y2 */
+
+
+    .section{
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 15px;
+        
+    }
+
+    .conteiner-section{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .title{
+        font-family: var(--font-primaria);
+        font-size: 1.8rem;
+    }
+    .text{
+        font-family: var(--font-secundaria);
+        margin-bottom: 10px;
+    }
+    .img-section{
+        width: 100%;
+        filter: contrast(110%)
+    }
+
+    /* SECTION3 */
+
+    .porque-elegirnos h2{
+        margin-bottom: 10px;
+    }
+
+    .card{
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        background-color: #e9ebeb;
+        padding: 10px;
+        border-radius: 5px;
+        /* margin-bottom: 10px; */
+    }
+
+    .title-card{
+        font-family: var(--font-secundaria);
+        font-size: 1.2rem;
+        color: var(--naranja);
+        
+    }
+
+    .img-card{
+        width: 100%;
+        filter: contrast(110%)
+    }
+
+    .card-eleginos{
+        width: 100%;
+        background-color: #e9ebeb;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 5px;
+        margin-bottom: 10px;
+    }
+    .card1-2{
+        width: 100%;
+    }
+
+    .card3-4{
+        width: 100%;
+    }
+
+    /* NOTICIAS */
+
+    .noticias{
+        margin-bottom: 10px;
+    }
+    .title-noticias{
+        font-family: var(--font-secundaria);
+        color: var(--verde);
+        font-size: 1.3rem;
+        margin-bottom: 5px;
+    }
+
+    /* FOOTER */
+
+    .footer{
+        padding: 10px;
+        background-color: var(--naranja);
+    }
+
+    .footer-conteiner{
+        margin-bottom: 10px;
+    }
+
+    .title-footer{
+        color: var(--azul);
+        font-family: var(--font-primaria);
+        font-size: 1.5rem;
+    }
+
+    .footer-conteiner ul li a{
+        text-decoration: none;
+        color: var(--blanco);
+        font-family: var(--font-secundaria);
+    }
+
+    .footer-conteiner a{
+        text-decoration: none;
+        color: var(--blanco);
+        font-family: var(--font-secundaria);
+    }
+}
+
+@media screen and (max-width: 768px) and (min-width:426px){
+    
+    /* HEADER */
+
+    .header{
+        background-color: var(--naranja);
+        width: 100%;
+        height: 80px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #btn-menu{
+        display: none;
+    }
+    
+    .nav label{
+        /* border: 1px solid beige; */
+        display: block;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        font-size: 1.6rem;
+        margin: 20px 15px;
+        
+    }
+
+    .nav label:hover{
+        cursor: pointer;
+    }
+
+    .menu{
+        position: absolute;
+        background: var(--naranja);
+        width: 70%;
+        margin-left: -70%;
+        transition: all .5s;
+    }
+
+    .menu ul{
+        flex-direction: column;
+        
+    }
+
+    .menu li{
+        border-top: 1px solid var(--blanco);
+        padding: 5px;
+    }
+    
+    #btn-menu:checked ~ .menu {
+        margin: 0;
+    }
+
+    .menu > ul > li > a{
+        text-decoration: none;
+        font-family: var(--font-secundaria);
+        color: var(--blanco);
+        
+    }
+
+    /* SECTION-TITLE-IMG */
+
+
+    .title-img{
+        width: 100%;
+        height: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url(./multimedia/img/libro-celular.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 10px;
+        font-size: 1rem;
+    }
+
+    .title-untref{
+        font-size: 4rem;
+        color: var(--azul);
+        text-shadow: 0px 0px 5px var(--naranja);
+    }
+
+
+    /* SECTION1Y2 */
+
+    .section{
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 15px;       
+    }
+
+    .conteiner-section{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .title{
+        font-family: var(--font-primaria);
+        font-size: 2.2rem;
+    }
+    .text{
+        font-family: var(--font-secundaria);
+        margin-bottom: 10px;
+    }
+    .img-section{
+        width: 100%;
+        filter: contrast(110%)
+    }
+
+    /* SECTION3 */
+
+    .card{
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        
+        border-radius: 5px;
+        margin-bottom: 10px;
+    }
+
+    .title-card{
+        font-family: var(--font-secundaria);
+        font-size: 1.2rem;
+        color: var(--naranja);
+        
+    }
+
+    .img-card{
+        width: 100%;
+        height: 220px;
+        filter: contrast(110%)
+    }
+
+    .card1-2{
+        display: flex;
+        gap: 10px;
+        width: 100%;
+    }
+
+    .card3-4{
+        display: flex;
+        gap: 10px;
+        width: 100%;
+    }
+
+    .card-eleginos{
+        width: 50%;
+        background-color: #e9ebeb;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 5px;
+    }
+    
+    /* NOTICIAS */
+
+    .noticias{
+        margin-bottom: 10px;
+    }
+    .title-noticias{
+        font-family: var(--font-secundaria);
+        color: var(--verde);
+        font-size: 1.8rem;
+        margin-bottom: 10px;
+    }
+
+    /* FOOTER */
+
+    .footer{
+        padding: 10px;
+        background-color: var(--naranja);
+    }
+
+    .footer-conteiner{
+        margin-bottom: 10px;
+    }
+
+    .title-footer{
+        color: var(--azul);
+        font-family: var(--font-primaria);
+        font-size: 1.5rem;
+    }
+
+    .footer-conteiner ul li a{
+        text-decoration: none;
+        color: var(--blanco);
+        font-family: var(--font-secundaria);
+    }
+
+    .footer-conteiner a{
+        text-decoration: none;
+        color: var(--blanco);
+        font-family: var(--font-secundaria);
+    }
+
+}
+
+@media screen and (max-width:2561px) and (min-width:769px){
+    
+    /* HEADER */
+
+    .header{
+        background-color: var(--naranja);
+        width: 100%;
+        height: 90px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .nav{
+        width: 100%;
+    }
+
+    .nav label{
+        display: none;
+    }
+
+    .menu > ul{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 10px;
+        padding: 15px;
+        font-size: .8rem;
+    }
+
+    .menu > ul > li > a{
+        text-decoration: none;
+        color: var(--blanco);
+    }
+
+    .menu > ul > li > a:hover{
+        background-color: rgba(0, 0, 0, .3);
+        
+    }
+
+    #btn-menu{
+        display: none;
+    }
+
+    
+
+    /* SECTION-TITLE-IMG */
+
+
+    .title-img{
+        width: 100%;
+        height: 350px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url(./multimedia/img/libro-celular.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 10px;
+        font-size: 1rem;
+        
+    }
+
+    .title-untref{
+        font-size: 8rem;
+        color: var(--azul);
+        text-shadow: 0px 0px 5px var(--naranja);
+    }
+
+    /* SECTION1Y2 */
+
+    .section{
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 15px;       
+    }
+
+    .conteiner-section{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .title{
+        font-family: var(--font-primaria);
+        font-size: 2.2rem;
+    }
+    .text{
+        font-family: var(--font-secundaria);
+        margin-bottom: 10px;
+    }
+    .img-section{
+        width: 100%;
+        height: 400px;
+        filter: contrast(110%)
+    }
+
+    .div{
+        display: flex;
+        padding: 10px;
+        gap: 20px;
+    }
+
+    .text-section{
+        width: 50%;
+    }
+
+    .img-main{
+        width: 50%;
+        filter: contrast(110%)
+    }
+
+    /* SECTION3 */
+    .cards{
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .card1-2{
+        display: flex;
+        gap: 15px;
+    }
+
+    .card{
+        margin: 0 auto;
+        align-items: center;
+        gap: 10px;    
+        border-radius: 5px;
+        margin-bottom: 10px;
+    }
+
+    .title-card{
+        font-family: var(--font-secundaria);
+        font-size: 1.2rem;
+        color: var(--naranja);
+        
+    }
+
+    .img-card{
+        width: 100%;
+        height: 220px;
+        filter: contrast(110%)
+    }
+
+
+    .card-eleginos{
+        width: 25%;
+        background-color: #e9ebeb;
+        border-radius: 5px;
+        /* display: flex; */
+        flex-direction: column;
+        align-items: center;
+        padding: 5px;
+    }
+    
+    /* NOTICIAS */
+
+    .noticias{
+        margin-bottom: 10px;
+    }
+    .title-noticias{
+        font-family: var(--font-secundaria);
+        color: var(--verde);
+        font-size: 1.8rem;
+        margin-bottom: 10px;
+    }
+
+    /* FOOTER */
+
+    .footer{
+        padding: 10px;
+        background-color: var(--naranja);
+        display: flex;
+        justify-content: space-evenly;
+        gap: 20px;
+    }
+
+    .footer-conteiner{
+        margin-bottom: 10px;
+    }
+
+    .title-footer{
+        color: var(--azul);
+        font-family: var(--font-primaria);
+        font-size: 1.5rem;
+    }
+
+    .footer-conteiner ul li a{
+        text-decoration: none;
+        color: var(--blanco);
+        font-family: var(--font-secundaria);
+    }
+
+    .footer-conteiner a{
+        text-decoration: none;
+        color: var(--blanco);
+        font-family: var(--font-secundaria);
+    }
+}
