@@ -5,4 +5,4 @@ Proyecto integrador con HTML y CSS
 
 ## Authors
 
-- [@Enzoaruiz](https://www.github.com/octokatherine)
+- [@Enzoaruiz](https://github.com/Enzoaruiz)
