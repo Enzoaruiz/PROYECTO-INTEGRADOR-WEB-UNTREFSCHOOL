@@ -227,7 +227,7 @@
     .formulario{
         width: 90%;
         margin: 0 auto;
-        height: 600px;
+        height: 700px;
     }
 
     .formulario h1 {
@@ -255,8 +255,15 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        gap: 30px;
+        gap: 10px;
         
+    }
+
+    .registro > form > label {
+        font-family: var(--font-secundaria);
+        font-size: 1.2rem;
+        font-weight: 900;
+        color: var(--naranja);
     }
 
     .registro > form > input {
@@ -491,7 +498,7 @@
     .formulario{
         width: 90%;
         margin: 0 auto;
-        height: 600px;
+        height: 700px;
     }
 
     .formulario h1 {
@@ -508,7 +515,6 @@
         border: 5px double;
         border-color: var(--naranja) var(--azul);
         width: 100%;
-        /* height: 300px; */
         background: #f5f9f9;
         padding: 15px;
         border-radius: 10px;
@@ -519,8 +525,15 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        gap: 30px;
+        gap: 10px;
         
+    }
+
+    .registro > form > label {
+        font-family: var(--font-secundaria);
+        font-size: 1.2rem;
+        font-weight: 900;
+        color: var(--naranja);
     }
 
     .registro > form > input {
@@ -787,16 +800,24 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        gap: 30px;
-        
+        gap: 10px;
     }
+
+    .registro > form > label {
+        font-family: var(--font-secundaria);
+        font-size: 1.2rem;
+        font-weight: 900;
+        color: var(--naranja);
+    }
+
+
 
     .registro > form > input {
         padding: 5px;
         border: 2px solid var(--azul);
         font-family: var(--font-secundaria);
         font-size: 1rem;
-        margin-top: 20px;
+        margin-top: 5px;
     }
 
     #button-form {
